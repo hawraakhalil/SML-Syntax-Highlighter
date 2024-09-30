@@ -4,7 +4,8 @@
 - [Introduction](#introduction)
 - [Features](#features)
 - [Supported SML Lexical Categories](#supported-sml-lexical-categories)
-- [Usage](#usage)
+- [Installation and Usage](#installation-and-usage)
+- [License](#license)
 
 ## Introduction
 The SML Syntax Highlighter is a lexer-based tool designed to read SML (Standard ML) source code and generate an HTML file with syntax highlighting. Implemented using a lexer generator, this tool formats various lexical categories of SML, enhancing code readability and making it easier for developers to understand the structure and elements of their code.
@@ -28,5 +29,26 @@ The following SML lexical categories are supported:
 - **Comments**: Colored light blue (rgb=#00aaff)
 - **Whitespace**: Displayed as appropriate HTML code
 
-## Usage
-To use the SML Syntax Highlighter, compile the code and run the executable, passing the SML file as an argument. The output will be saved in an HTML file.
+## Installation and Usage
+
+1. **Clone the repository:**
+    ```
+    git clone https://github.com/hawraakhalil/SML-Syntax-Highlighter.git
+    cd SML-Syntax-Highlighter
+    ```
+
+2. **Create an SML file if you do not want to use the example test.sml**
+  
+3. **To run using lex.yy.c:**
+      - Navigate to the main function at the end of the C file and customize the input and output file names.
+      - Compile and run the C file.
+
+4. **To run using output.exe:**
+      - Open terminal in the root directory.
+      - Run ```.\output.exe input_file.sml output_file.html``` for custom input and output files.
+      - Run ```.\output.exe input_file.sml``` for custom input file and test.html output file.
+
+5. **Open the HTML output file**
+
+## License
+This project is licensed under the MIT License.

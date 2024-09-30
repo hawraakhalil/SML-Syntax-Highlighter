@@ -45,12 +45,12 @@ true|false        print_Literals(yytext);
 
 
     /* Rule for identifiers */
-[A-Z][a-zA-Z_0-9]*     print_Upper_Identifiers(yytext);
-[a-z_][a-zA-Z_0-9]*    print_Lower_Identifiers(yytext);
+[A-Z][a-zA-Z_0-9\']*     print_Upper_Identifiers(yytext);
+[a-z_][a-zA-Z_0-9\']*    print_Lower_Identifiers(yytext);
 
 
     /* Rules for operators and separators */
-"+"|"-"|"*"|"|"|"=>"|"<="|">="|"="|"<"|">"|"::"|":"|"."|"["|"]"|","|"("|")"|";"    print_Operators(yytext);
+"+"|"-"|"*"|"|"|"=>"|"<="|">="|"="|"<"|">"|"::"|":"|"."|"["|"]"|","|"("|")"|";"|"^"    print_Operators(yytext);
 
 
 
